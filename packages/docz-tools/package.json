@@ -24,8 +24,6 @@
   },
   "peerDependencies": {
     "copy-text-to-clipboard": "*",
-    "docz": "*",
-    "gatsby-theme-docz": "*",
     "re-resizable": "*",
     "react": "*",
     "react-dom": "*",
