@@ -1,0 +1,224 @@
+:root {
+  --border-radius: 4px;
+  --color-text: rgb(51, 51, 51);
+  --color-primary: rgb(112, 38, 185);
+  --color-code-bg: rgb(255, 244, 219);
+  --color-code: rgb(138, 101, 52);
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  --font-lg: 18px;
+  --font-md: 16px;
+  --font-sm: 14px;
+  --font-sx: 12px;
+  --line-height-loose: 1.75;
+  --line-height-normal: 1.5;
+  --line-height-dense: 1.1;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 64px;
+  --size-content: 54rem;
+  --size-gutter: var(--space-5);
+  --size-gap: var(--space-6);
+}
+html {
+  box-sizing: border-box;
+  overflow-y: scroll;
+  font: sans-serif;
+  font-size: var(--font-md);
+  line-height: var(--line-height-normal);
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  color: var(--color-text);
+  font-family: sans-serif;
+  font-family: var(--font-sans);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal;
+  word-wrap: break-word;
+}
+a {
+  color: var(--color-primary);
+  font-weight: 500;
+  text-decoration: none;
+  text-decoration: underline;
+  background-color: transparent;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 2px;
+}
+a:active,
+a:hover {
+  outline-width: 0;
+  text-decoration: none;
+}
+abbr[title] {
+  border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
+  text-decoration: none;
+  cursor: help;
+}
+b,
+strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  margin: 0;
+  margin-bottom: 3rem;
+  padding: 0;
+  line-height: var(--line-height-dense);
+  letter-spacing: -0.01em;
+}
+h1 > b {
+  color: var(--color-primary);
+}
+img {
+  max-width: 100%;
+  border-style: none;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: var(--font-mono);
+  font-size: 1em;
+  line-height: inherit;
+}
+hr {
+  height: 1px;
+  box-sizing: content-box;
+  margin-top: 0;
+  margin-bottom: calc(var(--space-4) - 1px);
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  border: none;
+  overflow: visible;
+  background: hsla(0, 0%, 0%, 0.2);
+}
+* {
+  box-sizing: inherit;
+}
+*:before {
+  box-sizing: inherit;
+}
+*:after {
+  box-sizing: inherit;
+}
+hgroup,
+img,
+figure,
+fieldset,
+ul,
+ol,
+dl,
+dd,
+p {
+  margin: 0;
+  margin-bottom: var(--space-4);
+  padding: 0;
+}
+ul,
+ol {
+  margin-left: var(--space-4);
+  list-style-position: outside;
+  list-style-image: none;
+}
+pre {
+  margin-top: 0;
+  margin-bottom: var(--space-4);
+  margin-left: 0;
+  margin-right: 0;
+  padding: var(--space-4);
+  border-radius: var(--border-radius);
+  overflow: auto;
+  font-size: 0.875rem;
+  line-height: var(--line-height-normal);
+  word-wrap: normal;
+  background: hsla(0, 0%, 0%, 0.04);
+}
+b,
+strong,
+dt,
+th {
+  font-weight: bold;
+}
+li {
+  margin-bottom: calc(var(--space-4) / 2);
+}
+ol li,
+ul li {
+  padding-left: 0;
+}
+li > ol,
+li > ul {
+  margin-top: calc(var(--space-4) / 2);
+  margin-bottom: calc(var(--space-4) / 2);
+  margin-left: var(--space-4);
+}
+blockquote *:last-child {
+  margin-bottom: 0;
+}
+li *:last-child {
+  margin-bottom: 0;
+}
+p *:last-child {
+  margin-bottom: 0;
+}
+li > p {
+  margin-bottom: calc(var(--space-4) / 2);
+}
+p {
+  max-width: 680px;
+}
+code {
+  font-size: 0.875rem;
+}
+kbd {
+  font-size: 0.875rem;
+}
+samp {
+  font-size: 0.875rem;
+}
+abbr {
+  border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
+  cursor: help;
+}
+acronym {
+  border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
+  cursor: help;
+}
+tt,
+code {
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  border-radius: var(--border-radius);
+  color: var(--color-code);
+  font-family: var(--font-mono);
+  word-break: normal;
+  background-color: var(--color-code-bg);
+}
+pre code {
+  background: none;
+}
+code:before,
+code:after,
+tt:before,
+tt:after {
+  content: "\00a0";
+  letter-spacing: -0.2em;
+}
+pre code:before,
+pre code:after,
+pre tt:before,
+pre tt:after {
+  content: none;
+}

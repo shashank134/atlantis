@@ -3,5 +3,12 @@
   "compilerOptions": {
     "baseUrl": "."
   },
-  "files": []
+  // "files": [],
+  "include": [
+    "./gatsby-node.ts",
+    "./gatsby-config.ts",
+    "./gatsby/plugins/**/*",
+    "./gatsby/**/*.tsx",
+    "./gatsby/**/*.ts"
+  ]
 }
